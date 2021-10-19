@@ -1,36 +1,100 @@
 <html>
-  <style>
-    body {
-      background-color: rgb(255,255,255);;
-    }
-    h1 {
-      color: rgb(0,0,0);
-      text-align: center;
-    }
-    
-	h2 {
-      color: rgb(128,128,128);
-      text-align: center;
-    }
-    
-    p {
-      color : rgb(60,60,60);
-      font-family: consolas;
-      font-size: 15px;
-    }
-  </style>
-  <body>
+<style>
+div {
+   color : rgb(60,60,60);
+   font-family: consolas;
+   font-size: 15px;
+}
+p {
+  color : rgb(60,60,60);
+  font-family: consolas;
+  font-size: 15px;
+}
+#container{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 20px;
+}
+.item {
+  border-radius: 15px;
+  font-size: 1em;
+  text-align: center;
+  border: 2px solid #e5e4e9;
+}
 
-    <h1>Hello, my name is Chen Shouao</h1>
-    <p>Let me introduce myself to you!</p>
-	<p>I'm a algorithm lover and participate in some competitive programming contest.I once participate in ACM-ICPC Shaanxi invitational contest and be awarded silver medal.</p>
-    <p>Here are some pesonal website of me, which may help you know more about me.</p>
-    Codeforces : <a href = "https://codeforces.com/profile/chenshouao" id = "codeforces">chenshouao</a>
-    <br>
-    Leetcode : <a href = "https://leetcode-cn.com/u/shouao/" id = "leetcode">shouao</a>
-    <br>
-    Github : <a href = "https://github.com/chenshouao" id = "github">chenshouao</a>
-    <br>
-    <p>I'm a student in 3rd grade,so I'm a little busy. Here is my course table.</p>
-  </body>
+.item-1 {
+  background-color: #ef342a;
+}
+
+.item-2 {
+  background-color: rgb(120,120,120);
+}
+
+.item-3 {
+  background-color: #4ba946;
+}
+.item-4 {
+  background-color: rgb(45,150,150);
+}
+.item {
+  border-radius: 15px;
+  font-size: 1em;
+  text-align: center;
+  border: 2px solid #e5e4e9;
+}
+#HEAD{
+  display: grid;
+  grid-template-columns: 420px 650px 420px;
+  grid-template-rows: 100px;
+}
+.content-2{
+  font-size: 2em;
+  font-family: Georgia;
+  text-align: center;
+}
+#main{
+  font-family: consolas;
+  display: grid;
+  grid-template-columns: 470px 590px 450px;
+  grid-template-rows: 700px;
+}
+  </style>
+      <body>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>JS Bin</title>
+      </head>
+      <div id="HEAD">
+        <div class="content-1"><img src = "bea_left.jpg" width="420" height="900"align = "middle"></div>
+        <div class="content-2">
+              <b>Welcome to shouao's own website</b>
+            </div>
+        <div class="content-3"><img src = "bea_right.jpg" width="420" height="900"align = "middle"></div>
+      </div>
+      <div id = "main">
+        <div></div>
+        <div>
+              My name is Chen Shou ao. Let me introduce myself to you!
+              I'm a algorithm lover and participated in some competitive
+              programming contests.I once participate in 2021 ACM-ICPC Shaanxi
+              invitational contest and be awarded silver medal. 
+              <br>
+              <br>
+              At the end of this page, there are many links of mine, which may help you to get to know me.
+            </div>
+            <div></div>
+          </div>
+          <div id="container">
+        <a href = "https://codeforces.com/profile/chenshouao" class="item item-1">Codeforces</a>
+        <a href = "https://leetcode-cn.com/u/shouao/" class="item item-2">Leetcode</a>
+        <a href = "https://github.com/chenshouao" class="item item-3">Github</a>
+        <a href = "https://chenshouao.github.io/mkdocs/" class="item item-4">My own blog</a>
+      </div>
+      </body>
+}
 </html>
