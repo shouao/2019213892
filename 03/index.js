@@ -1,14 +1,14 @@
 var buttonIsPressed = false;
 
 function rand(m, n) {
-  return Math.floor(Math.random() * (n - m + 1) + m)
+  return Math.floor(Math.random() * (n - m + 1) + m);
 }
 
 class RBTree {
   constructor(arr = []) {
     arr.forEach((node, idx) => {
-      node.ty = node.y = 40
-      node.tx = node.x = (idx + 1) * 40
+      node.ty = node.y = 40;
+      node.tx = node.x = (idx + 1) * 40;
     });
 
     this.arr = arr;
@@ -19,9 +19,9 @@ class RBTree {
     })*/
   };
   add(e) {
-    const me = this
+    const me = this;
 
-    function add(node) {
+    function add(node, e) {
       if (!node) {
         return e;
       }
@@ -215,7 +215,7 @@ window.onresize = (e) => {
 }
 
 window.onresize();
-
+//每过200ms即运行一次
 function loopAdd() {
   setTimeout(() => {
 	if (rbTree.arr.length != 0 && buttonIsPressed) {
@@ -231,7 +231,7 @@ function loopAdd() {
     loopAdd();
   }, 200);
 };
-//每过400ms即运行一次
+
 function loopRender() {
   requestAnimationFrame(() => {
     rbTree.nextFrame();
