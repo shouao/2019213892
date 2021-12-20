@@ -151,7 +151,7 @@ class RBTree {
       node.l && gd.lineTo(node.l.x, node.l.y);
       gd.lineTo(node.x, node.y);
       node.r && gd.lineTo(node.r.x, node.r.y);
-      gd.strokeStyle = '#FFFFFF';
+      gd.strokeStyle = '#456';
       gd.stroke();
 
       drawLine(node.l);

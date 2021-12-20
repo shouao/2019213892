@@ -9,13 +9,13 @@
 html, body {height: 100%;}
 
 #app {height: 100%;}
-#app canvas {width: 100%; height: 100%; vertical-align: top; background: -wheat;}
+#app canvas {width: 100%; height: 100%; vertical-align: top; background: #36648B;}
 
 .insertButton{
 	background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 1% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -30,7 +30,7 @@ html, body {height: 100%;}
 	background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 1% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -45,7 +45,7 @@ html, body {height: 100%;}
 	background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 1% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
