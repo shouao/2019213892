@@ -1,7 +1,9 @@
 var buttonIsPressed = false;
+
 function rand(m, n) {
   return Math.floor(Math.random() * (n - m + 1) + m)
 }
+
 class RBTree {
   constructor(arr = []) {
     arr.forEach((node, idx) => {
@@ -184,9 +186,9 @@ class RBTree {
 
 const c = document.getElementById('c');
 const gd = c.getContext('2d');
-let len = 4;
+let len = 0;
 let arr = new Array(len).fill().map((_, idx) => {
-  return rand(0, len * 100)
+  return rand(0, 1000);
 });
 
 // arr = [1,2,3,4]
@@ -260,6 +262,18 @@ function submit(){
 		color: true,
 	});
 }
-
+function randAdd() {
+	var v = rand(0, 1000);
+	rbTree.arr.push({
+		e: v,
+		l: null,
+		r: null,
+		x: (rbTree.arr.length + 1) * 40,
+		y: 40,
+		tx: (rbTree.arr.length + 1) * 40,
+		ty: 40,
+		color: true,
+	});
+}
 loopAdd();
 loopRender();
